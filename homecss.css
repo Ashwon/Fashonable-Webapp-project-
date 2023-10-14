@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: auto;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+    font-family: Helvetica;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+li a {
+    float: right;
+    display: flex;
+    color: #666;
+    text-align: center;
+    padding: 25px 60px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    color: #04AA6D;
+}
+
+li a.active {
+    color: #ff5f5f;
+}
+
+li h3 {
+    font-family: 'Sacramento', cursive;
+    font-weight: 500;
+    text-align: center;
+    font-size: 45px;
+    float: left;
+    margin: 0;
+    padding-top: 5px;
+}
+
+#navbar {
+    z-index: 1
+}
+
+#mainimg{
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    max-width: 100%;
+    height: auto;
+    padding-top: 60px;
+}
+
+#hotdeals {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    padding-left: 60px;
+}
+
+
+.hotdealsimg {
+    height: auto;
+    width: 300px;
+    padding-left: 60px;
+    z-index: 0;
+}
+
+.maintxt {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    padding-top: 10px;
+    margin: 0;
+    max-width: fit-content;
+    display: inline-block;
+}
+
+.txt {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    padding-left: 98px;
+    margin: 0;
+    display: inline-block;
+}
+
+#nikeshoes-hotdeals-text {
+    padding-left: 70px;
+}
+#nikeshoes-hotdeals-text-price {
+    padding-left: 78px;
+}
+
+
+#nikeshirt-hotdeals-text {
+    padding-left: 100px;
+}
+#nikeshirt-hotdeals-text-price {
+    padding-left: 108px;
+}
+
+
+#nikeshort-hotdeals-text {
+    padding-left: 110px;
+}
+#nikeshort-hotdeals-text-price {
+    padding-left: 113px;
+}
+
+
+#nikebag-hotdeals-text {
+    padding-left: 74px;
+}
+
+#nikebag-hotdeals-text-price {
+    padding-left: 110px;
+}
+
+
+.footer {
+    background-color: #000000;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    font-size: 60px;
+    padding-top: 45px;
+    height: 250px;
+    width: 100%;
+    border-top: 1px solid #e7e7e7;
+    color: white;
+}
+
+#more {
+    font-family: 'Gabarito', sans-serif;
+    font-weight: 800;
+    font-size: 90px;
+    text-align: center;
+    max-width: fit-content;
+    padding-left: 325px;
+}
