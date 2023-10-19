@@ -1,0 +1,298 @@
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Bebas+Neue&family=Teko:wght@300&family=Gabarito&family=Poppins&family=Quicksand:wght@300&family=Sacramento&display=swap" rel="stylesheet">
+    <title>Products</title>
+
+    <link rel="stylesheet" href="productscss.css">
+    <script type="text/javascript" src="productsjs.js"></script>
+</head>
+
+<body>
+    <div id="navbar">
+        <ul>
+            <li><h3>Fashonable</h3></li>
+            <li><a href="#about">About</a></li>        
+            <li><a href="#contact">Contact</a></li>
+            <li><a class="active" href="Products.html">Product</a></li>
+            <li><a href="../index.html">Home</a></li>
+        </ul>
+    </div>
+
+
+    <div id="producttype">
+        <p class="active" id="men" onclick="producttype(this.id)" style="display: inline-block;padding-left: 420px;">Men</p>
+        <p id="women" onclick="producttype(this.id)" style="display: inline-block;padding-left: 220px;">Women</p>
+        <p style="display: inline-block;padding-left: 190px;padding-right: 120px;">Accessories</p>
+        
+        <button id="cartbtn" onclick="cart()">Proceed to cart</button> 
+        <hr style="width: 50%;">
+    </div>    
+
+
+
+    <span id="productsmen">
+        <br><br>
+        <h1 style="font-family: Teko, sans-serif;font-size: 60px;padding-left: 150px;margin: 0 "><i>MEN'S CLOTHING</i></h1>
+        <br>
+
+        <div class="grid-container">
+            <!--ROW 1-->
+            <div style="padding-left: 150px;">
+                <img class="productimgs" src="productsmen/pro1.webp"></img>
+            </div>
+            <div>
+                <img class="productimgs" src="productsmen/pro2.webp"></img>
+            </div>
+            <div>
+                <img class="productimgs" src="productsmen/pro3.webp"></img>
+            </div>
+            <div>
+                <p class="proname" style="padding-left: 150px;">Nike Sportswear Tech Fleece</p>
+            </div>
+            <div>
+                <p class="proname">Man United 23/24 Third Jersey</p>
+            </div>
+            <div>
+                <p class="proname">BRANDLOVE Tee</p>
+            </div>
+            <div>
+                <p class="protype" style="padding-left: 150px;">Men's 1/2-Zip Sweatshirt</p>
+            </div>
+            <div>
+                <p class="protype">Men's Football</p>
+            </div>
+            <div>
+                <p class="protype">Men's Training</p>
+            </div>
+            <div>
+                <p class="price" style="padding-left: 150px;">MRP:&nbsp;&nbsp;&nbsp;₹&nbsp;7&nbsp;995.00</p>
+            </div>
+            <div>
+                <p class="price">MRP:&nbsp;&nbsp;&nbsp;₹&nbsp;5&nbsp;299.00</p>
+            </div>
+            <div>
+                <p class="price">MRP:&nbsp;&nbsp;&nbsp;₹&nbsp;839.50</p>
+            </div>
+            <div class="counter">
+                <p class="quantity" style="padding-left: 70px;"><i>Quantity:</i>&nbsp;&nbsp;</p>
+                <button class="down" id="pro1" onClick='decreaseCount(this.id, this)'>-</button>
+                <input type="text" value="0">
+                <button class="up" id="pro1" onClick='increaseCount(this.id, this)'>+</button>
+            </div>
+            <div class="counter">
+                <p class="quantity"><i>Quantity:</i>&nbsp;&nbsp;</p>
+                <button class="down" id="pro2" onClick='decreaseCount(this.id, this)'>-</button>
+                <input type="text" value="0">
+                <button class="up" id="pro2" onClick='increaseCount(this.id, this)'>+</button>
+            </div>
+            <div class="counter">
+                <p class="quantity"><i>Quantity:</i>&nbsp;&nbsp;</p>
+                <button class="down" id="pro3" onClick='decreaseCount(this.id, this)'>-</button>
+                <input type="text" value="0">
+                <button class="up" id="pro3" onClick='increaseCount(this.id, this)'>+</button>
+            </div>
+
+
+
+            <!--ROW 2-->
+            <div style="padding-left: 150px; padding-top: 100px;">
+                <img class="productimgs" src="productsmen/pro4.webp"></img>
+            </div>
+            <div style="padding-top: 100px;">
+                <img class="productimgs" src="productsmen/pro5.webp"></img>
+            </div>
+            <div style=" padding-top: 100px;">
+                <img class="productimgs" src="productsmen/pro6.webp"></img>
+            </div>
+            <div>
+                <p class="proname" style="padding-left: 150px;">Nike Dri-FIT ADV A.P.S.</p>
+            </div>
+            <div>
+                <p class="proname">Nike ESC</p>
+            </div>
+            <div>
+                <p class="proname">Essentials Single Jersey Logo TEE</p>
+            </div>
+            <div>
+                <p class="protype" style="padding-left: 150px;">Men's Engineered Short-Sleeve Fitness Top</p>
+            </div>
+            <div>
+                <p class="protype">Men's Full-Zip Wool Jumper</p>
+            </div>
+            <div>
+                <p class="protype">Men's Sportswear</p>
+            </div>
+            <div>
+                <p class="price" style="padding-left: 150px;">MRP:&nbsp;&nbsp;&nbsp;₹&nbsp;4&nbsp;495.00</p>
+            </div>
+            <div>
+                <p class="price">MRP:&nbsp;&nbsp;&nbsp;₹&nbsp;19&nbsp;995.00</p>
+            </div>
+            <div>
+                <p class="price">MRP:&nbsp;&nbsp;&nbsp;₹&nbsp;1&nbsp;099.50</p>
+            </div>
+            <div class="counter">
+                <p class="quantity" style="padding-left: 70px;"><i>Quantity:</i>&nbsp;&nbsp;</p>
+                <button class="down" id="pro4"onClick='decreaseCount(this.id, this)'>-</button>
+                <input type="text" value="0">
+                <button class="up" id="pro4" onClick='increaseCount(this.id, this)'>+</button>
+            </div>
+            <div class="counter">
+                <p class="quantity"><i>Quantity:</i>&nbsp;&nbsp;</p>
+                <button class="down" id="pro5"onClick='decreaseCount(this.id, this)'>-</button>
+                <input type="text" value="0">
+                <button class="up" id="pro5" onClick='increaseCount(this.id, this)'>+</button>
+            </div>
+            <div class="counter">
+                <p class="quantity"><i>Quantity:</i>&nbsp;&nbsp;</p>
+                <button class="down" id="pro6"onClick='decreaseCount(this.id, this)'>-</button>
+                <input type="text" value="0">
+                <button class="up" id="pro6" onClick='increaseCount(this.id, this)'>+</button>
+            </div>
+        </div>
+    </span>
+
+
+
+
+    <span id="productswomen" style="display: none;">
+        <br><br>
+        <h1 style="font-family: Teko, sans-serif;font-size: 60px;padding-left: 150px;margin: 0 "><i>WOMEN'S CLOTHING(work in progress)</i></h1>
+        <br>
+
+        <div class="grid-container">
+            <!--ROW 1-->
+            <div style="padding-left: 150px;">
+                <img class="productimgs" src="productsmen/pro1.webp"></img>
+            </div>
+            <div>
+                <img class="productimgs" src="productsmen/pro2.webp"></img>
+            </div>
+            <div>
+                <img class="productimgs" src="productsmen/pro3.webp"></img>
+            </div>
+            <div>
+                <p class="proname" style="padding-left: 150px;">Nike Sportswear Tech Fleece</p>
+            </div>
+            <div>
+                <p class="proname">Man United 23/24 Third Jersey</p>
+            </div>
+            <div>
+                <p class="proname">BRANDLOVE Tee</p>
+            </div>
+            <div>
+                <p class="protype" style="padding-left: 150px;">Men's 1/2-Zip Sweatshirt</p>
+            </div>
+            <div>
+                <p class="protype">Men's Football</p>
+            </div>
+            <div>
+                <p class="protype">Men's Training</p>
+            </div>
+            <div>
+                <p class="price" style="padding-left: 150px;">MRP:&nbsp;&nbsp;&nbsp;₹&nbsp;7&nbsp;995.00</p>
+            </div>
+            <div>
+                <p class="price">MRP:&nbsp;&nbsp;&nbsp;₹&nbsp;5&nbsp;299.00</p>
+            </div>
+            <div>
+                <p class="price">MRP:&nbsp;&nbsp;&nbsp;₹&nbsp;839.50</p>
+            </div>
+            <div class="counter">
+                <p class="quantity" style="padding-left: 70px;"><i>Quantity:</i>&nbsp;&nbsp;</p>
+                <button class="down" id="pro1" onClick='decreaseCount(this.id, this)'>-</button>
+                <input type="text" value="0">
+                <button class="up" id="pro1" onClick='increaseCount(this.id, this)'>+</button>
+            </div>
+            <div class="counter">
+                <p class="quantity"><i>Quantity:</i>&nbsp;&nbsp;</p>
+                <button class="down" id="pro2" onClick='decreaseCount(this.id, this)'>-</button>
+                <input type="text" value="0">
+                <button class="up" id="pro2" onClick='increaseCount(this.id, this)'>+</button>
+            </div>
+            <div class="counter">
+                <p class="quantity"><i>Quantity:</i>&nbsp;&nbsp;</p>
+                <button class="down" id="pro3" onClick='decreaseCount(this.id, this)'>-</button>
+                <input type="text" value="0">
+                <button class="up" id="pro3" onClick='increaseCount(this.id, this)'>+</button>
+            </div>
+
+
+
+            <!--ROW 2-->
+            <div style="padding-left: 150px; padding-top: 100px;">
+                <img class="productimgs" src="productsmen/pro4.webp"></img>
+            </div>
+            <div style="padding-top: 100px;">
+                <img class="productimgs" src="productsmen/pro5.webp"></img>
+            </div>
+            <div style=" padding-top: 100px;">
+                <img class="productimgs" src="productsmen/pro6.webp"></img>
+            </div>
+            <div>
+                <p class="proname" style="padding-left: 150px;">Nike Dri-FIT ADV A.P.S.</p>
+            </div>
+            <div>
+                <p class="proname">Nike ESC</p>
+            </div>
+            <div>
+                <p class="proname">Essentials Single Jersey Logo TEE</p>
+            </div>
+            <div>
+                <p class="protype" style="padding-left: 150px;">Men's Engineered Short-Sleeve Fitness Top</p>
+            </div>
+            <div>
+                <p class="protype">Men's Full-Zip Wool Jumper</p>
+            </div>
+            <div>
+                <p class="protype">Men's Sportswear</p>
+            </div>
+            <div>
+                <p class="price" style="padding-left: 150px;">MRP:&nbsp;&nbsp;&nbsp;₹&nbsp;4&nbsp;495.00</p>
+            </div>
+            <div>
+                <p class="price">MRP:&nbsp;&nbsp;&nbsp;₹&nbsp;19&nbsp;995.00</p>
+            </div>
+            <div>
+                <p class="price">MRP:&nbsp;&nbsp;&nbsp;₹&nbsp;1&nbsp;099.50</p>
+            </div>
+            <div class="counter">
+                <p class="quantity" style="padding-left: 70px;"><i>Quantity:</i>&nbsp;&nbsp;</p>
+                <button class="down" id="pro4"onClick='decreaseCount(this.id, this)'>-</button>
+                <input type="text" value="0">
+                <button class="up" id="pro4" onClick='increaseCount(this.id, this)'>+</button>
+            </div>
+            <div class="counter">
+                <p class="quantity"><i>Quantity:</i>&nbsp;&nbsp;</p>
+                <button class="down" id="pro5"onClick='decreaseCount(this.id, this)'>-</button>
+                <input type="text" value="0">
+                <button class="up" id="pro5" onClick='increaseCount(this.id, this)'>+</button>
+            </div>
+            <div class="counter">
+                <p class="quantity"><i>Quantity:</i>&nbsp;&nbsp;</p>
+                <button class="down" id="pro6"onClick='decreaseCount(this.id, this)'>-</button>
+                <input type="text" value="0">
+                <button class="up" id="pro6" onClick='increaseCount(this.id, this)'>+</button>
+            </div>
+        </div>
+    </span>
+
+
+
+    <span id="cart">
+        <div id="cartheading">
+            <h1>Your Cart</h1>
+        </div>
+        <br>
+        <div id="summary">
+            <h1 id="totitems">Total items: 0</h1>
+            <h1 id="totprice">Total price: </h1>
+              
+            <button id="paybtn">Proceed to Pay</button> 
+
+        </div>
+    </span>
+    <br><br>
+
+</body>
+</html>
