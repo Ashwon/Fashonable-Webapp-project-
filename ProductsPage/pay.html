@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Bebas+Neue&family=Teko:wght@300&family=Gabarito&family=Poppins&family=Quicksand:wght@300&family=Sacramento&display=swap" rel="stylesheet">
+    <title>Checkout</title>
+
+    <link rel="stylesheet" href="pay.css">
+    <script type="text/javascript" src="productsjs.js"></script>
+</head>
+
+<body  onload="bill();">
+    
+    <span id="cart">
+        <div id="cartheading">
+            <h1>Shipping & Payment Info</h1>
+        </div>
+    </span>
+
+    <form id="frm" action="../index.html" onsubmit="payit()">
+        <div id="info">
+            <p style="padding-top: 25px; padding-left: 185px;">Shipping Info</p>
+            <hr style="width: 50%; margin-left: 37%;">
+            <input type="text" minlength="3" placeholder="First Name" required>
+            <input type="text" minlength="3" placeholder="Last Name" required>
+            <input type="text" minlength="3" placeholder="Address" required>
+            <input type="text" minlength="3" placeholder="City" required>
+            <input type="text" minlength="3" placeholder="State" required>
+            <input type="text" minlength="6" maxlength="6" pattern="\d*" placeholder="Zip Code">
+            <p style="padding-top: 25px; padding-left: 185px;">Payment Info</p>
+            <hr style="width: 50%; margin-left: 37%;">
+            <input type="text" minlength="16" maxlength="19" pattern="\d*" placeholder="Card Number" required><br>
+            <input type="date" placeholder="Expiration Date" required><br>
+            <input type="text" minlength="3" maxlength="4" pattern="\d*" placeholder="CVV" required><br>
+            <input type="text" placeholder="Name on Card" required><br>
+            <input type="text" placeholder="Billing Address" required><br><br>         
+        </div>
+        <div id="bill">
+            <h1>Order Summary</h1>
+            <hr>
+            <p id="sub">Subtotal: </p>
+            <p>Delivery/Shipping: ₹ 1 000.00</p>
+            <hr>    
+            <p style="font-size: 25px;" id="tota">Total: </p>
+            <hr>
+            <br>
+            <button id="pay">Pay</button>
+        </div>
+    </form>
+
+</body>
+</html>
