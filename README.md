@@ -1,7 +1,8 @@
 # Fashonable-Webapp-project-
 Web Application Project - Create a fashon stylist website
 
-cool info:
+cool info:  
+
 Total: 11 files, 1770 codes, 14 comments, 277 blanks, all 2061 lines  
 
 
