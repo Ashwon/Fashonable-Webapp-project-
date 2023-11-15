@@ -5,14 +5,15 @@
 
     <script type="text/javascript" src="homejs.js"></script>
     <link rel="stylesheet" href="homecss.css">
+    <script type="text/javascript" src="ProductsPage/productsjs.js"></script>
 </head>
         
 <body>
     <div id="navbar">
         <ul>
-            <li><h3>Fashonable</h3></li>
+            <li><h3>Fashionable</h3></li>
             <li><a href="#about">About</a></li>        
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <li><a href="ProductsPage/Products.html">Product</a></li>
             <li><a class="active" href="#home">Home</a></li>
         </ul>
@@ -21,21 +22,21 @@
     <img id="mainimg" src="Fashon.jpg"></img>
     <h1 id="hotdeals">Hot Deals right now.</h1>
 
-    <img class="hotdealsimg" id="nike-shoes" src="nikeshoes-hotdeals.jpg" onmouseover="hoverzoom(this.id)" onmouseout="hoverzoomout(this.id)"></img>  
-    <img class="hotdealsimg" id="nike-shirt" src="justinshirt.webp" onmouseover="hoverzoom(this.id)" onmouseout="hoverzoomout(this.id)"></img>
-    <img class="hotdealsimg" id="nike-shorts" src="justinshorts.webp" onmouseover="hoverzoom(this.id)" onmouseout="hoverzoomout(this.id)"></img>
-    <img class="hotdealsimg" id="nike-bag" src="bag.webp" onmouseover="hoverzoom(this.id)" onmouseout="hoverzoomout(this.id)"></img>
+    <img class="hotdealsimg" onclick=producttype(this.id) id="goshoe" src="shoes.webp" onmouseover="hoverzoom(this.id)" onmouseout="hoverzoomout(this.id)"></img>  
+    <img class="hotdealsimg" onclick=producttype(this.id) id="gomen" src="justinshirt.webp" onmouseover="hoverzoom(this.id)" onmouseout="hoverzoomout(this.id)"></img>
+    <img class="hotdealsimg" onclick=producttype(this.id) id="gomen" src="justinshorts.webp" onmouseover="hoverzoom(this.id)" onmouseout="hoverzoomout(this.id)"></img>
+    <img class="hotdealsimg" onclick=producttype(this.id) id="gowomen" src="sportswear.webp" onmouseover="hoverzoom(this.id)" onmouseout="hoverzoomout(this.id)"></img>
 
     <br>
-    <p class="maintxt" id="nikeshoes-hotdeals-text" onmouseover="hoverzoom(this.id)" onmouseout="hoverzoomout(this.id)"> Air Max Shoes</p>
-    <p class="maintxt" id="nikeshirt-hotdeals-text" onmouseover="hoverzoom(this.id)" onmouseout="hoverzoomout(this.id)">Pullover fleece Hoodies</p>
-    <p class="maintxt" id="nikeshort-hotdeals-text" onmouseover="hoverzoom(this.id)" onmouseout="hoverzoomout(this.id)">Football Shorts</p>
-    <p class="maintxt" id="nikebag-hotdeals-text" onmouseover="hoverzoom(this.id)" onmouseout="hoverzoomout(this.id)">Cross Body Bag</p>
+    <p class="maintxt" onclick=producttype(this.id) id="nikeshes-hotdeals-text" onmouseover="hoverzoom(this.id)" onmouseout="hoverzoomout(this.id)">Air Max Excee</p>
+    <p class="maintxt" onclick=producttype(this.id) id="nikeshirt-hotdeals-text" onmouseover="hoverzoom(this.id)" onmouseout="hoverzoomout(this.id)">Pullover fleece Hoodies</p>
+    <p class="maintxt" onclick=producttype(this.id) id="nikeshort-hotdeals-text" onmouseover="hoverzoom(this.id)" onmouseout="hoverzoomout(this.id)">Football Shorts</p>
+    <p class="maintxt" onclick=producttype(this.id) id="niketshirt-hotdeals-text" onmouseover="hoverzoom(this.id)" onmouseout="hoverzoomout(this.id)">Sportswear Fleece</p>
     <br>
-    <p class="txt" id="nikeshoes-hotdeals-text-price"><s>₹8595</s>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₹7305&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;15% Off</p>  
+    <p class="txt" id="nikeshoes-hotdeals-text-price"><s>₹9194</s>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₹7995&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;15% Off</p>  
     <p class="txt" id="nikeshirt-hotdeals-text-price"><s>₹7995</s>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₹6396&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;20% Off</p>
     <p class="txt" id="nikeshort-hotdeals-text-price"><s>₹3095</s>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₹2785&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10% Off</p>
-    <p class="txt" id="nikebag-hotdeals-text-price"><s>₹1595</s>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₹1323&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;17% Off</p>
+    <p class="txt" id="niketshirt-hotdeals-text-price"><s>₹10524</s>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₹8995&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;17% Off</p>
     
     <br><br><br><br><br>
     <h1 id="hotdeals">Trending Now.</h1>
@@ -43,10 +44,10 @@
 
     <img class="trendingimg" src="trendingshoes1.jpg"></img>
     <img class="trendingimg" src="trendingshoes2.jpg"></img>
-    <p class="trendingtxt">NIKE ZOOM TR1</p>
+    <p class="trendingtxt">NIKE AIR MAX</p>
     <p class="trendingsmall-txt">Light and responsive. Built for your workout and beyond.</p>
     <div style="text-align: center; padding-top: 15px;">
-        <button class="trendingshop-btn">Shop</button>
+        <button class="trendingshop-btn" id="goshoe" onclick=producttype(this.id)>Shop</button>
     </div>
     <br><br><br><br><br><br><br><br><br><br>
 
@@ -56,7 +57,7 @@
     <p class="trendingtxt">NIKE SPORTSWEAR</p>
     <p class="trendingsmall-txt">Crisp and clean. The smooth, woven taffeta fabric for cool comfort and classic style.</p>
     <div style="text-align: center; padding-top: 15px;">
-        <button class="trendingshop-btn">Shop</button>
+        <button class="trendingshop-btn" id="gomen" onclick=producttype(this.id)>Shop</button>
     </div>
     <br><br><br><br><br><br><br><br><br><br>
 
@@ -65,21 +66,21 @@
     <h1 id="hotdeals">The Essentials.</h1>
     <div class="essendiv">      
         <img class="essentials" id="essenmen" src="essentialsmen.webp"></img>
-        <button class="btn">Men</button>
+        <button class="btn" id="btnmen" onclick=producttype(this.id)>Men</button>
     </div>
     <div class="essendiv">      
         <img class="essentials" id="essenwomen" src="essentialswomen.webp"></img>
-        <button class="btn" id="btnwomen">Women</button>
+        <button class="btn" id="btnwomen" onclick=producttype(this.id)>Women</button>
     </div>
     <div class="essendiv">
         <img class="essentials" id="essenwomen" src="essentialsshoes.jpg"></img>
-        <button class="btn" id="btnacc">Accessories</button>
+        <button class="btn" id="btnacc" onclick=producttype(this.id)>Shoes</button>
     </div>
 
 
     
     <br><br><br><br><br>
-    <h1 id="more" onmouseover="hoverzoom(this.id)" onmouseout="hoverzoomout(this.id)">
+    <h1 id="more" onclick=producttype(this.id) onmouseover="hoverzoom(this.id)" onmouseout="hoverzoomout(this.id)">
         See More at Products!
     </h1>
     <br><br><br><br><br>
